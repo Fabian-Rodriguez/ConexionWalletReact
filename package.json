@@ -2,6 +2,8 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
+  "main": "index.js",
   "dependencies": {
     "@project-serum/anchor": "^0.25.0",
     "@solana/wallet-adapter-base": "^0.9.16",
@@ -15,7 +17,7 @@
     "next": "^13.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "^2.1.3",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -23,7 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "serve": "index.js",
+    "serve": "node index.js",
     "dev": "next dev"
   },
   "eslintConfig": {
@@ -43,5 +45,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^9.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1"
   }
 }

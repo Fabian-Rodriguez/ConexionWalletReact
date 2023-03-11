@@ -1,6 +1,6 @@
-const express = require('express');
+import path from './src/components/header.jsx';
+import express from 'express';
 const app = express();
-const path = require('./components/index.js');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
